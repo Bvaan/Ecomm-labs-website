@@ -1,0 +1,103 @@
+.preload * {
+  transition: none !important;
+}
+
+.reveal,
+.portfolio-card,
+.price-card,
+.service-card,
+.stat-item {
+  will-change: transform, opacity;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes chevronBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(201, 168, 112, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(201, 168, 112, 0.42);
+  }
+}
+
+@keyframes gradientMesh {
+  0% {
+    background-position: 10% 20%, 90% 10%, 50% 90%, center;
+  }
+
+  50% {
+    background-position: 22% 36%, 76% 22%, 44% 72%, center;
+  }
+
+  100% {
+    background-position: 10% 20%, 90% 10%, 50% 90%, center;
+  }
+}
+
+@keyframes lineScan {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes subtleSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-delay-1 {
+  animation-delay: 350ms;
+}
+
+.floating-delay-2 {
+  animation-delay: 700ms;
+}
+
+.pulse-on-hover:hover {
+  animation: glowPulse 1.35s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

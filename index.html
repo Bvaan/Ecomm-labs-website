@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EComm Labs builds precision e-commerce websites, portfolio sites, and promo pages for brands that need speed, polish, and conversion-focused design." />
+    <title>EComm Labs | E-commerce Solutions. Precision in Every Pixel.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="preload">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand-link" href="index.html" aria-label="EComm Labs home">
+          <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M14 14h36v25H14z" fill="none" stroke="#C9A870" stroke-width="3" />
+            <path d="M14 39h36l6 9H8l6-9z" fill="none" stroke="#C9A870" stroke-width="3" stroke-linejoin="round" />
+            <path d="M18 35V18h27L18 35z" fill="#C9A870" opacity="0.92" />
+            <path d="M18 18h28v17" fill="none" stroke="#C9A870" stroke-width="2" />
+          </svg>
+          <span>EComm Labs</span>
+        </a>
+
+        <div class="nav-links" aria-label="Main links">
+          <a href="index.html#solutions" aria-current="page">Solutions</a>
+          <a href="index.html#services">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn nav-cta" href="pricing.html#contact">Get Started</a>
+          <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__links">
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#services">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="pricing.html#contact">Get Started</a>
+      </div>
+    </div>
+
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <main id="main-content" class="site-shell">
+      <section class="home-hero" id="solutions" aria-labelledby="home-title">
+        <div class="container">
+          <div class="hero-content">
+            <p class="eyebrow">Enterprise E-Commerce Solutions</p>
+            <h1 class="hero-title" id="home-title">
+              <span class="hero-line">Building Digital</span>
+              <span class="hero-line">Storefronts That</span>
+              <span class="hero-line accent-gradient">Convert.</span>
+            </h1>
+            <p class="hero-copy hero-fade">Custom Websites. Portfolio Sites. Restaurant and School Promos. Designed for growth and built for speed.</p>
+            <div class="hero-actions hero-fade">
+              <a class="btn btn-primary pulse-on-hover" href="pricing.html#contact">Get Started</a>
+              <a class="btn btn-ghost" href="portfolio.html">
+                View Our Work
+                <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14" />
+                  <path d="M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span>Scroll</span>
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Our Services</p>
+            <h2 id="services-title">Three Pillars of Our Work</h2>
+            <p>Every build is engineered for conversion, clarity, and long-term maintainability.</p>
+          </div>
+
+          <div class="service-list">
+            <article class="service-card" data-tilt-card>
+              <div class="service-icon floating" aria-hidden="true">
+                <svg class="icon-svg" viewBox="0 0 24 24">
+                  <circle cx="9" cy="20" r="1.4" />
+                  <circle cx="17" cy="20" r="1.4" />
+                  <path d="M3 4h2l2.5 11.5h9.8l2.2-7.5H7" />
+                  <path d="M8 11h10" />
+                </svg>
+              </div>
+              <div>
+                <h3>E-Commerce Stores</h3>
+                <p>Full online stores for shops and retailers with product listings, cart, payment, inventory, and analytics. Built to convert.</p>
+              </div>
+              <strong class="service-stat"><span aria-hidden="true">&#8593;</span> 3x Average Conversion Rate</strong>
+            </article>
+
+            <article class="service-card" data-tilt-card>
+              <div class="service-icon floating floating-delay-1" aria-hidden="true">
+                <svg class="icon-svg" viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4.5 21c1.3-4.1 4-6 7.5-6s6.2 1.9 7.5 6" />
+                </svg>
+              </div>
+              <div>
+                <h3>Individual Portfolios</h3>
+                <p>Personal portfolio websites for creatives, developers, photographers, founders, and professionals who need a sharper digital presence.</p>
+              </div>
+              <strong class="service-stat"><span aria-hidden="true">&#10003;</span> Delivered in 7 Days</strong>
+            </article>
+
+            <article class="service-card" data-tilt-card>
+              <div class="service-icon floating floating-delay-2" aria-hidden="true">
+                <svg class="icon-svg" viewBox="0 0 24 24">
+                  <path d="M6 3v8" />
+                  <path d="M4 3v4" />
+                  <path d="M8 3v4" />
+                  <path d="M6 11v10" />
+                  <path d="M17 3c-2 2-3 4.5-3 8h4v10" />
+                </svg>
+              </div>
+              <div>
+                <h3>Promo Pages</h3>
+                <p>Stunning single-page websites for restaurants, schools, local businesses, and institutions. Fast. Beautiful. Affordable.</p>
+              </div>
+              <strong class="service-stat"><span aria-hidden="true">&#9889;</span> Live in 48 Hours</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-section" aria-labelledby="stats-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Measured Impact</p>
+            <h2 id="stats-title">Numbers That Keep Moving</h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-count="50" data-suffix="+">0+</div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="98" data-suffix="%">0%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="48" data-suffix="hrs">0hrs</div>
+              <div class="stat-label">Fastest Turnaround</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="3" data-suffix="x">0x</div>
+              <div class="stat-label">Average ROI</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showcase-section" id="showcase" aria-labelledby="showcase-title">
+        <div class="container showcase-grid">
+          <div class="showcase-stage" id="showcase-stage" aria-label="Three dimensional showcase of EComm Labs service categories">
+            <canvas id="showcase-canvas" aria-hidden="true"></canvas>
+            <span class="cube-label cube-label--one">E-Commerce</span>
+            <span class="cube-label cube-label--two">Portfolio</span>
+            <span class="cube-label cube-label--three">Promo Sites</span>
+          </div>
+
+          <div class="showcase-copy reveal">
+            <p class="section-kicker">3D Tech Showcase</p>
+            <h2 id="showcase-title">Enterprise-Grade Tech. Boutique Attention.</h2>
+            <p>We use modern frameworks and proven architectures to deliver websites that load fast, rank well, and look extraordinary.</p>
+            <ul class="feature-list">
+              <li>Headless and Shopify architectures</li>
+              <li>SEO-optimized from day one</li>
+              <li>Mobile-first responsive design</li>
+              <li>CRM and payment integrations</li>
+              <li>Lifetime support available</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-banner" aria-labelledby="cta-title">
+        <div class="container reveal">
+          <h2 id="cta-title">Ready to Build Something Extraordinary?</h2>
+          <p>Tell us about your project. We will respond within 24 hours.</p>
+          <a class="btn btn-primary" href="pricing.html#contact">
+            Start Your Project
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo-mark" aria-label="EComm Labs logo">
+            <svg class="logo-mark__laptop" viewBox="0 0 128 92" aria-hidden="true">
+              <path d="M24 10h80v52H24z" fill="none" stroke="#C9A870" stroke-width="4" />
+              <path d="M24 62h80l12 16H12l12-16z" fill="none" stroke="#C9A870" stroke-width="4" stroke-linejoin="round" />
+              <path d="M30 56V16h65L30 56z" fill="#C9A870" opacity="0.92" />
+              <path d="M30 16h68v40" fill="none" stroke="#C9A870" stroke-width="3" />
+            </svg>
+            <span class="logo-mark__title">EComm Labs</span>
+            <span class="logo-mark__script">E-commerce solutions</span>
+          </div>
+          <p>E-commerce Solutions. Precision in Every Pixel.</p>
+          <div class="footer-copy">&copy; 2024 EComm Labs. All rights reserved.</div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Links</h3>
+          <div class="footer-links">
+            <a href="index.html#solutions">Solutions</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-contact">
+            <a href="mailto:hello@ecommlabs.com">hello@ecommlabs.com</a>
+            <a href="pricing.html#contact">Project Inquiry</a>
+          </div>
+          <div class="social-row" aria-label="Social links">
+            <a class="social-link" href="https://instagram.com" aria-label="Instagram">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="5" />
+                <circle cx="12" cy="12" r="3.2" />
+                <path d="M17.5 6.8h.01" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://x.com" aria-label="Twitter X">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4l16 16" />
+                <path d="M20 4L4 20" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://linkedin.com" aria-label="LinkedIn">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 10v8" />
+                <path d="M6 6.5v.01" />
+                <path d="M10 18v-8" />
+                <path d="M10 13.5c0-2.2 1.3-3.7 3.5-3.7S18 11.2 18 14v4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/three-hero.js"></script>
+    <script src="js/three-showcase.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/tilt.js"></script>
+  </body>
+</html>

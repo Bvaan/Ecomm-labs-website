@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore EComm Labs portfolio work across e-commerce, personal portfolios, restaurant promos, and school websites." />
+    <title>Our Work | EComm Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="preload portfolio-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="brand-link" href="index.html" aria-label="EComm Labs home">
+          <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M14 14h36v25H14z" fill="none" stroke="#C9A870" stroke-width="3" />
+            <path d="M14 39h36l6 9H8l6-9z" fill="none" stroke="#C9A870" stroke-width="3" stroke-linejoin="round" />
+            <path d="M18 35V18h27L18 35z" fill="#C9A870" opacity="0.92" />
+            <path d="M18 18h28v17" fill="none" stroke="#C9A870" stroke-width="2" />
+          </svg>
+          <span>EComm Labs</span>
+        </a>
+
+        <div class="nav-links" aria-label="Main links">
+          <a href="index.html#solutions">Solutions</a>
+          <a href="index.html#services">Services</a>
+          <a href="portfolio.html" aria-current="page">Portfolio</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="btn nav-cta" href="pricing.html#contact">Get Started</a>
+          <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__links">
+        <a href="index.html#solutions">Solutions</a>
+        <a href="index.html#services">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="pricing.html#contact">Get Started</a>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="subpage-hero portfolio-hero" aria-labelledby="portfolio-title">
+        <canvas class="subpage-3d-canvas" data-subpage-scene="portfolio" aria-hidden="true"></canvas>
+        <div class="container subpage-hero__content">
+          <p class="eyebrow">Our Work</p>
+          <h1 id="portfolio-title">
+            <span class="hero-line">Success Stories in</span>
+            <span class="hero-line accent-gradient">Digital Transformation</span>
+          </h1>
+          <p class="hero-copy">Discover how we engineer high-performance websites and elevate digital experiences.</p>
+        </div>
+      </section>
+
+      <section class="filters-section" aria-label="Portfolio filters">
+        <div class="container">
+          <div class="filter-bar">
+            <button class="filter-pill is-active" type="button" data-filter="all">All</button>
+            <button class="filter-pill" type="button" data-filter="e-commerce">E-Commerce</button>
+            <button class="filter-pill" type="button" data-filter="portfolio">Portfolio</button>
+            <button class="filter-pill" type="button" data-filter="promo">Promo</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="work-grid" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Selected Builds</p>
+            <h2 id="projects-title">Precision Work, Built to Scale</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="portfolio-card portfolio-card--tall" data-category="e-commerce" data-tilt-card>
+              <div class="browser-frame" aria-hidden="true">
+                <div class="browser-chrome">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="url-bar"></div>
+                </div>
+                <div class="storefront-dashboard">
+                  <div class="store-sidebar">
+                    <div class="store-logo"></div>
+                    <div class="store-line"></div>
+                    <div class="store-line"></div>
+                    <div class="store-line"></div>
+                  </div>
+                  <div class="store-main">
+                    <div class="store-hero"></div>
+                    <div class="product-grid">
+                      <div class="product-tile"></div>
+                      <div class="product-tile"></div>
+                      <div class="product-tile"></div>
+                      <div class="product-tile"></div>
+                      <div class="product-tile"></div>
+                      <div class="product-tile"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="project-title">Nova Retail Commerce</h3>
+              <p class="project-summary">A conversion-focused storefront with segmented collections, checkout polish, inventory logic, and fast campaign landing pages.</p>
+              <div class="project-meta">
+                <span class="project-badge">&#8593; 3x Conversion Rate</span>
+                <div class="tag-row">
+                  <span class="tag">E-Commerce</span>
+                  <span class="tag">Shopify</span>
+                </div>
+              </div>
+              <div class="project-overlay">View Case Study &rarr;</div>
+            </article>
+
+            <article class="portfolio-card" data-category="portfolio" data-tilt-card>
+              <div class="phone-mockup" aria-hidden="true">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="profile-circle"></div>
+                  <div class="profile-name"></div>
+                  <div class="profile-line"></div>
+                  <div class="profile-line"></div>
+                  <div class="profile-line short"></div>
+                </div>
+              </div>
+              <h3 class="project-title">Ari Lane Studio</h3>
+              <p class="project-summary">A personal portfolio for a multidisciplinary creative with a fast case-study flow and polished mobile presentation.</p>
+              <div class="project-meta">
+                <span class="project-badge">&#10003; 7-Day Delivery</span>
+                <div class="tag-row">
+                  <span class="tag">Portfolio</span>
+                  <span class="tag">Individual</span>
+                </div>
+              </div>
+              <div class="project-overlay">View Case Study &rarr;</div>
+            </article>
+
+            <article class="portfolio-card portfolio-card--wide" data-category="promo" data-tilt-card>
+              <div class="promo-preview" aria-hidden="true">
+                <div class="utensil-symbol"></div>
+                <div>
+                  <div class="preview-title">Ember Table</div>
+                  <div class="preview-lines">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="project-title">Restaurant Promo Launch</h3>
+              <p class="project-summary">A sharp single-page experience for menu highlights, reservations, hours, and high-intent local search traffic.</p>
+              <div class="project-meta">
+                <span class="project-badge">&#9889; 48hr Launch</span>
+                <div class="tag-row">
+                  <span class="tag">Promo</span>
+                  <span class="tag">Restaurant</span>
+                </div>
+              </div>
+              <div class="project-overlay">View Case Study &rarr;</div>
+            </article>
+
+            <article class="portfolio-card" data-category="promo" data-tilt-card>
+              <div class="school-preview" aria-hidden="true">
+                <div class="cap-symbol"></div>
+                <div>
+                  <div class="preview-title">Northline Academy</div>
+                  <div class="preview-lines">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <h3 class="project-title">School Website System</h3>
+              <p class="project-summary">An institution-ready web presence for admissions, announcements, academic programs, and parent communication.</p>
+              <div class="project-meta">
+                <span class="project-badge">Institution Ready</span>
+                <div class="tag-row">
+                  <span class="tag">Promo</span>
+                  <span class="tag">School</span>
+                </div>
+              </div>
+              <div class="project-overlay">View Case Study &rarr;</div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo-mark" aria-label="EComm Labs logo">
+            <svg class="logo-mark__laptop" viewBox="0 0 128 92" aria-hidden="true">
+              <path d="M24 10h80v52H24z" fill="none" stroke="#C9A870" stroke-width="4" />
+              <path d="M24 62h80l12 16H12l12-16z" fill="none" stroke="#C9A870" stroke-width="4" stroke-linejoin="round" />
+              <path d="M30 56V16h65L30 56z" fill="#C9A870" opacity="0.92" />
+              <path d="M30 16h68v40" fill="none" stroke="#C9A870" stroke-width="3" />
+            </svg>
+            <span class="logo-mark__title">EComm Labs</span>
+            <span class="logo-mark__script">E-commerce solutions</span>
+          </div>
+          <p>E-commerce Solutions. Precision in Every Pixel.</p>
+          <div class="footer-copy">&copy; 2024 EComm Labs. All rights reserved.</div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Links</h3>
+          <div class="footer-links">
+            <a href="index.html#solutions">Solutions</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-contact">
+            <a href="mailto:hello@ecommlabs.com">hello@ecommlabs.com</a>
+            <a href="pricing.html#contact">Project Inquiry</a>
+          </div>
+          <div class="social-row" aria-label="Social links">
+            <a class="social-link" href="https://instagram.com" aria-label="Instagram">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="5" />
+                <circle cx="12" cy="12" r="3.2" />
+                <path d="M17.5 6.8h.01" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://x.com" aria-label="Twitter X">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4l16 16" />
+                <path d="M20 4L4 20" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://linkedin.com" aria-label="LinkedIn">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 10v8" />
+                <path d="M6 6.5v.01" />
+                <path d="M10 18v-8" />
+                <path d="M10 13.5c0-2.2 1.3-3.7 3.5-3.7S18 11.2 18 14v4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/three-subpages.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/tilt.js"></script>
+  </body>
+</html>
